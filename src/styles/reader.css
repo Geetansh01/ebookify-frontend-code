@@ -1,0 +1,67 @@
+.reader{
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+
+.header{
+    height: 7.79%;
+}
+
+.menu{
+    height: 92%;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 400px;
+    padding: 10px 24px;
+    font-size: 19px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu>div{
+    height: 107px;
+    padding: 5px;
+}
+
+.content{
+    margin: auto;
+    width: 67%;
+    height: 84%;
+    overflow: hidden;
+}
+
+.font-options{
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.page-color-options{
+    display: flex;
+    gap: 25px;
+    margin-top: 16px;
+}
+
+.page-color-options>.circle{
+    border: 1px solid #c8c8c8;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.circle-black{
+    background-color: black;
+}
+
+.circle-white{
+    background-color: white;
+}
+.circle-beige{
+    background-color: beige;
+}

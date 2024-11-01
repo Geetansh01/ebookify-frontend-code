@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+.bd{
+    border: 2px solid red;
+}

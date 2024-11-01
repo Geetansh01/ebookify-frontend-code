@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import menu from '../assets/menu.svg';
 
-const Header_ = () => {
+const Header_ = ({ displayfuncs }) => {
   return (
-    <div className='header bd'>I am Header</div>
+    <div className='header bd'>
+      <p>Ebookify</p>
+      <p>Book Title</p>
+      <img src={menu} onClick={() => { displayfuncs.setmenuvisible(!displayfuncs.menuvisible) }} className="showMenuBtn"></img>
+    </div>
+
   )
 }
 

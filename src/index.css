@@ -1,10 +1,16 @@
+:root{
+    --pri-color: #212121;
+    --dev-color: grey;
+}
+
 *{
     padding: 0;
     margin: 0;
-    background-color: grey;
+    background-color: var(--pri-color);
     box-sizing: border-box;
 }
 
+/* Enable while developing for debugging purposes  */
 .bd{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }

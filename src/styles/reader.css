@@ -5,6 +5,18 @@
     overflow: hidden;
 }
 
+.reader>.wrapper{
+    display: flex;
+    height: calc(100vh - 60px);
+    background-color: inherit;
+}
+
+.reader>.wrapper>img{
+    width: 48px;
+    height: 100%;
+    background-color: inherit;
+}
+
 .header{
     height: 60px;
     padding: 10px;
@@ -39,10 +51,22 @@
     padding: 5px;
 }
 
-.content{
-    margin: auto;
+.reader>.wrapper>.subwrapper{
+    margin: 0 auto;
     width: 67%;
-    height: 84%;
+    background-color: inherit;
+}
+
+.reader>.wrapper>.subwrapper>p{
+    background-color: inherit;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+}
+
+.content{
+    white-space: pre-line;
+    height: 95%;
     overflow: scroll;
     background-color: inherit;
     font-size: inherit;
@@ -55,6 +79,15 @@
 
 .content::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
+}
+
+.content>.page_heading{
+    background-color: inherit;
+    font-size: 18px;
+    font-style: italic;
+    overflow-x: hidden;
+    width: 100%;
+    text-align: center;
 }
 
 .font-options{

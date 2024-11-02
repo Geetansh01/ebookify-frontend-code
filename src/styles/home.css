@@ -2,4 +2,49 @@
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.dropzone{
+    border: 2px solid #aaa;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropzone button {
+    background-color:red; /* Red primary color */
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropzone button:hover {
+    background-color: #e64634; /* Darker red on hover */
+    transform: translateY(-2px); /* Subtle lift */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow */
+  }
+  
+  .dropzone button:active {
+    background-color: #a93226; /* Even darker red when clicked */
+    transform: translateY(0); /* Reset lift */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow */
+  }

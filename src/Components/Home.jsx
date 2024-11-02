@@ -20,7 +20,8 @@ const Home = () => {
             const exampleFile = new Blob([await Files[0].arrayBuffer()], { type: Files[0].type });
 
             try {
-                const client = await Client.connect("http://localhost:7860/");
+                // const client = await Client.connect("http://localhost:7860/"); //For development phase
+                const client = await Client.connect("Geetansh01/ebookify-backend2/"); //For production (using my hf spaces API (from gradio): it's public, anyone can use it 😊)
                 const response = await client.predict("/process_pdf", { pdf: exampleFile });
                 // console.log(response.data[0])
                 setchapters(response.data[0])

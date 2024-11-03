@@ -24,7 +24,7 @@
     gap: 10px;
 }
 
-.dropzone button {
+.read_ebook_btn {
     background-color:red; /* Red primary color */
     color: #ffffff;
     padding: 12px 20px;
@@ -37,13 +37,13 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .dropzone button:hover {
+  .read_ebook_btn:hover {
     background-color: #e64634; /* Darker red on hover */
     transform: translateY(-2px); /* Subtle lift */
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow */
   }
   
-  .dropzone button:active {
+  .read_ebook_btn:active {
     background-color: #a93226; /* Even darker red when clicked */
     transform: translateY(0); /* Reset lift */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow */

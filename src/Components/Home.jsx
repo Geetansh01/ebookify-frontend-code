@@ -15,7 +15,7 @@ const Home = () => {
     const btnref1 = useRef();
 
     const uploadFiles = async (sample = false) => {
-        btnref1.current.innerText = "Processing!"
+        btnref1.current.innerText = "Processing! Only first 2 pages will be converted to eBook (Limits of free resources 😢)"
         if (sample || (Files && Files.length > 0)) {
             // Read the PDF file as Blob 
             let exampleFile;
@@ -152,7 +152,7 @@ const Home = () => {
             const fileSize = exampleFile.size / (1024 * 1024); // Convert to MB
             if (fileSize > 1) {
                 console.error("File size exceeds 1MB limit.");
-                btnref1.current.innerText = "Due to limited free resources, only PDFs ≤ 1MB and ≤ 4 pages are supported. Please try the sample PDF below!";
+                btnref1.current.innerText = "Due to limited free resources, only PDFs ≤ 1MB are supported. Try the sample PDF below instead!";
                 return; // Exit the function if the file is too large
             }
 
@@ -212,7 +212,7 @@ const Home = () => {
             }
             {(chapters.length == 0) &&
                 <div style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
-                    <h3>Try Sample pdf (Backend sleeps after 48 hours of inactivity on free hosting. Please try the sample below instead.) </h3>
+                    <p>Read the sample pdf below as eBook if above non-responsive. Backend sleeps after 48 hours of inactivity due to free hosting 😢 </p>
                     <a href={pg_3_sample}>Download PDF</a>
                     <button className='read_ebook_btn' style={{ width: '170px' }} onClick={() => { uploadFiles(true) }} >Read as eBook!</button>
                 </div>}
